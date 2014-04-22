@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Test Front-end with Bootstrap and less</title>
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css" />
+		<link rel="stylesheet/less" type="text/less" href="css/less/styles.less" />
+		<script src="js/less.js-master/dist/less-1.7.0.min.js" type="text/javascript"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile -->
+		<!-- ou <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> pour desactiver le zoom -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>   
+   </head>
+
+    <body>
+		<div class="container-fluid">
+			<div class="row wrapper-header">
+				<header>
+					<div class=" wrapper-logo col-md-4 col-sm-12 col-xs-12">
+						<h1>ChopSuey</h1>
+						<div class="main-logo"></div>
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="wrapper-top-info">
+							<span class="phone-info">012345131232 |</span>
+							<span class="socialNetwork-info">
+								<a href="#" class="socialNetwork-link">facebook,</a>
+								<a href="#" class="socialNetwork-link">twitter</a>
+							</span>
+						</div>
+						<nav class="main-menu">
+							<ul class="menuWrapper horizontal">
+								<li class="menuItem active"><a href="#">Home</a></li>
+								<li class="menuItem"><a href="#">About us</a></li>
+								<li class="menuItem"><a href="#">What we do</a></li>
+								<li class="menuItem"><a href="#">Portfolio</a></li>
+								<li class="menuItem"><a href="#">Contact us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+			<div class="row main-banner">
+				<div class="content-banner"></div>
+			</div>
+			<div class="row main-content">
+				<section class="wrapper-content">
+					<div class="content-block col-md-4 col-sm-4 col-xs-12">
+                        <img src="img/circle_01.jpg" alt="Circle1" class="img-circle"/>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan nisi tincidunt ligula blandit vehicula. Maecenas mattis tellus vitae quam sagittis viverra. Nullam non fermentum lectus. Praesent eu tellus pharetra, ultrices tortor eu, blandit massa. Nunc augue felis, elementum ultricies est eget, volutpat ultrices tellus</p>
+					</div>
+					<div class="content-block col-md-4 col-sm-4 col-xs-12">
+                        <img src="img/circle_02.jpg" alt="Circle2" class="img-circle"/>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan nisi tincidunt ligula blandit vehicula. Maecenas mattis tellus vitae quam sagittis viverra. Nullam non fermentum lectus. Praesent eu tellus pharetra, ultrices tortor eu, blandit massa. Nunc augue felis, elementum ultricies est eget, volutpat ultrices tellus</p>
+					</div>
+					<div class="content-block col-md-4 col-sm-4 col-xs-12">	
+                        <img src="img/circle_03.jpg" alt="Circle3" class="img-circle"/>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan nisi tincidunt ligula blandit vehicula. Maecenas mattis tellus vitae quam sagittis viverra. Nullam non fermentum lectus. Praesent eu tellus pharetra, ultrices tortor eu, blandit massa. Nunc augue felis, elementum ultricies est eget, volutpat ultrices tellus</p>
+					</div>
+				</section>
+			</div>			
+			<div class="row footer">
+				<footer class="wrapper-footer">
+                    <div class="wrapper-footer-top">
+                        <section class="footer-top">
+                            <div class="welcome-text col-md-8 col-sm-8 col-xs-12">
+                                <h2>Welcome</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nulla vitae nisi imperdiet, posuere mi quis, dignissim lectus. Sed ac magna ut justo sodales tempor a ac nulla. Fusce imperdiet dui sit amet mollis pharetra.
+                                Sed vestibulum, massa ut eleifend volutpat, justo orci sollicitudin arcu, nec pulvinar lectus nulla eget mi.
+                                Morbi posuere lacinia nisi, lacinia faucibus augue tristique sed. Mauris venenatis consectetur nibh at elementum. Pellentesque odio nunc, laoreet non felis sit amet. 
+                                Sed sit amet posuere leo. Nulla et enim sapien. Integer nec accumsan lacus. Nullam ornare arcu risus, vitae ullamcorper ante dictum at. Ut rutrum imperdiet diam convallis mollis.</p>
+                            </div>
+                            <div class="contact-form col-md-4 col-sm-4 col-xs-12">
+                                <h2>Get in touch</h2>
+                                <form method="post" action="traitement.php">
+                                    <label for="type">Enquiry Type</label><br />
+                                        <select name="type" class="type">
+                                            <option value="choose" selected>Choose an inquiry type</option>
+                                            <option value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                        </select><br />
+                                    <label for="email">Email</label><br />
+                                        <input type="text" name="email" class="email" placeholder="e.g.jonh@doe.com"/><br />
+                                    <label for="message">Message</label><br />
+                                        <textarea name="message" class="message" placeholder="Enter your message here"></textarea>
+                                    <input class="submit" type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="wrapper-footer-bottom">
+                        <section class="footer-bottom">
+                            <div class="copyright col-md-6 col-sm-6 col-xs-12"><p>ChopSuez 2014</p></div>
+                            <div class="credits col-md-6 col-sm-6 col-xs-12"><p>Website by VeInteractive</p></div>
+                        </section>
+					</div>
+				</footer>
+			</div>
+		</div>
+    </body>
+	
+</html>

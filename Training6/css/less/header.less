@@ -1,0 +1,71 @@
+/* Header */
+
+header {
+    height: 131px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-logo {
+	background: url("../../img/logo.png") no-repeat;
+	width: 222px;
+	height: 60px;
+	margin: 35px 10px;
+	
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+.wrapper-top-info {
+	font-style: italic;
+	font-size: 13px;
+	text-align: right;
+	margin-top: 35px;
+    margin-right: 10px;
+	
+	@media (max-width: 992px) {
+		display: none;
+	}
+
+	.phone-info {
+		color: @grey;
+	}
+	
+	.socialNetwork-info a {
+		text-decoration:none;
+		color: @coral;
+		font-style: italic;
+	}
+}
+.main-menu {
+	text-align: right;
+    margin-top: 30px;
+	
+	@media (max-width: 992px) {
+		margin-top: 0;
+		margin-bottom: 10px;
+		padding: 0;
+		text-align: center;
+	}
+
+	ul li {
+		display: inline-block;
+		margin: 0 15px;
+		
+		@media (max-width: 992px) {
+			margin: 10px 15px;
+		}
+	
+		a {
+			font-size: 16px;
+			font-weight: bold;
+			color: #000;
+			
+			&:hover {
+				border-bottom:2px solid @orangered;
+				padding-bottom: 3px;
+				text-decoration:none;
+				color: #000;
+			}
+		}
+	}
+}
